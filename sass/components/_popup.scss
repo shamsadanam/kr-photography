@@ -1,0 +1,169 @@
+.popup {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color-black, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  //   padding-bottom: 5rem;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__title {
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 0;
+  }
+
+  &__content {
+    max-width: 80%;
+    margin: auto;
+    transform: scale(0.1);
+    transition: all 0.4s;
+    // border: 1px solid red;
+
+    @include respondMin(610px) {
+      width: 75%;
+    }
+    @include respondMin(768px) {
+      width: 60%;
+    }
+  }
+
+  &:target &__content {
+    transform: scale(1);
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // border: 2px solid blue;
+  }
+  &__img-container {
+    height: 25rem;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    @include respondMin(570px) {
+      height: 30rem;
+    }
+
+    &--tall {
+      width: 15rem;
+    }
+    &--wide {
+      max-width: 30rem;
+      @include respondMin(570px) {
+        max-width: 35rem;
+      }
+      @include respondMin(700px) {
+        max-width: 40rem;
+      }
+      @include respondMin(701px) {
+        max-width: 45rem;
+      }
+      @include respondMin(992px) {
+        width: 55rem;
+      }
+    }
+  }
+  &__img {
+    @include imgCover();
+  }
+  &__text {
+    background-color: transparent;
+    @include flexCenter();
+    justify-content: space-around;
+    padding: 1.5rem 0 1.5rem 0;
+    border-radius: 1rem;
+  }
+  &__name {
+    font-size: 1.8rem;
+    color: $color-white;
+    @include respondMin(700px) {
+      font-size: 2.5rem;
+    }
+    @include respondMin(951px) {
+      font-size: 3rem;
+    }
+  }
+  & .btn__purchase {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: $color-accent-green;
+    color: $color-white;
+    font-size: 1.8rem;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__close {
+    font-size: 3rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    transition: all 0.2s;
+    z-index: 9999;
+    & i {
+      color: $color-white;
+      font-size: 3rem;
+      &:hover {
+        color: $color-accent-red;
+      }
+    }
+
+    // @include respondMin() {
+    // }
+  }
+  & .owl-dots {
+    display: none;
+  }
+  & .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    color: $color-white;
+    font-size: 5rem;
+    transition: all 0.2s;
+  }
+
+  & .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+
+  & .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+  & .owl-carousel .owl-nav button:hover,
+  & .owl-carousel .owl-nav button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  //   & .owl-carousel .owl-nav button:hover {
+  //     transform: translateY(-60%);
+  //   }
+}

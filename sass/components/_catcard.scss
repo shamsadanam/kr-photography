@@ -1,0 +1,78 @@
+.catcard {
+  background-color: $color-white;
+
+  border-radius: 2rem;
+  //   border: 1px solid $color-primary;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  transition: all 0.3s;
+  box-shadow: 0px 5px 10px rgba($color-black, 0.2);
+
+  margin-bottom: 2rem;
+
+  @include respondMin(992px) {
+    &:hover {
+      cursor: pointer;
+      transform: translateY(5px);
+      box-shadow: 0px 1px 1px rgba($color-black, 0.2);
+    }
+  }
+
+  &__title {
+    // text-align: center;
+
+    font-size: 2rem;
+    font-weight: 600;
+    @include flexCenter();
+    flex: 0 0 40%;
+    max-width: 40%;
+    // border: 1px solid red;
+    &--bg {
+      font-size: 1.6rem;
+
+      @include respondMin(576px) {
+        transform: translateX(5px);
+      }
+    }
+  }
+  &__img {
+    flex: 0 0 60%;
+    height: 15rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
+
+    @include bgCover();
+
+    @include respondMin(576px) {
+      height: 10rem;
+    }
+    @include respondMin(700px) {
+      height: 12rem;
+    }
+    &--1 {
+      background-image: url("../resources/macro/macro-8.jpg");
+    }
+    &--2 {
+      background-image: url("../resources/silu/silu-4.jpg");
+    }
+    &--3 {
+      background-image: url("../resources/ppl/ppl-10.jpg");
+    }
+    &--4 {
+      background-image: url("../resources/nat/nat-14.jpg");
+    }
+
+    &--2,
+    &--4 {
+      @include respondMax(575px) {
+        order: -1;
+        clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);
+      }
+    }
+  }
+  //   &__img {
+  //     // @include imgCover();
+  //   }
+}

@@ -1,0 +1,102 @@
+.showcase {
+  background-color: $color-white;
+  padding: 2rem 0;
+  box-shadow: $shadow-section;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+
+  @include respondMin(400px) {
+    max-width: 85%;
+  }
+
+  @include respondMin(992px) {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__case-top {
+    max-width: 70%;
+    @include respondMin(992px) {
+      max-width: 50%;
+    }
+    margin: auto;
+  }
+  &__case-bottom {
+    max-width: 80%;
+    margin: auto;
+  }
+  &__top {
+    width: 100%;
+    height: 20rem;
+    margin: auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    // border: 1px solid red;
+    @include respondMin(575px) {
+      height: 20rem;
+    }
+
+    @include respondMin(700px) {
+      height: 25rem;
+    }
+    @include respondMin(800px) {
+      height: 30rem;
+    }
+    @include respondMin(992px) {
+      width: 80%;
+      height: 35rem;
+    }
+  }
+
+  &__top-img {
+    @include imgCover();
+  }
+  &__thumb {
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 8rem;
+    @include respondMin(700px) {
+      height: 12rem;
+    }
+    @include respondMin(992px) {
+      height: 12rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  & .owl-item {
+    height: 8rem;
+    @include respondMin(700px) {
+      height: 12rem;
+    }
+    @include respondMin(992px) {
+      height: 15rem;
+    }
+  }
+
+  &__thumb-img {
+    @include imgCover();
+    border-radius: 1rem;
+    transition: all 0.2s;
+  }
+  & .owl-nav {
+    margin-top: 0;
+    font-size: 6rem;
+
+    & button:focus {
+      border: none;
+      outline: none;
+    }
+
+    & [class*="owl-"]:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+  & .owl-dots {
+    display: none;
+  }
+}

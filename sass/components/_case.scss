@@ -1,0 +1,49 @@
+.case {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.x {
+  display: flex;
+  flex-wrap: wrap;
+}
+.y-40 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.y-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.y-100 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.y-xs-3 {
+  @include respondMin(340px) {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.y-sm-5 {
+  @include respondMin(700px) {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+.y-md-4 {
+  @include respondMin(992px) {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.y-md-5 {
+  @include respondMin(992px) {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

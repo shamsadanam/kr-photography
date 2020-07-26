@@ -1,0 +1,24 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/case";
+@import "components/cat";
+@import "components/singleview";
+
+// remove this dev components
+@import "components/dev";
+
+@import "pages/galpage";
+
+@import "layout/nav";
+@import "layout/header";
+@import "layout/about";
+@import "layout/contact";
+@import "layout/footer";

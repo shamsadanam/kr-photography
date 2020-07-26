@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | ASM Photography</title>
+    <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/galpage.css" />
+  </head>
+  <body>
+    <!-- =========== Top Navigtions =========== -->
+    <nav class="mynav" id="mynav">
+      <div class="mynav__container">
+        <ul class="mynav__navbar">
+          <li data-scroll="home" class="mynav__item">
+            <a href="index.html" class="mynav__link">
+              <i class="bx bxs-home"></i>
+              Home
+              <svg
+                class="border-out-right"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M675.726 324.681L676 324.587V352.261C675.909 352.23 675.817 352.198 675.726 352.167C675.908 347.609 676 343.027 676 338.424C676 333.821 675.908 329.24 675.726 324.681ZM337.576 0H351.413L351.319 0.273955C346.76 0.0918966 342.179 0 337.576 0ZM337.576 0C333.97 0 330.378 0.0563786 326.8 0.168302L326.749 0H337.576ZM0 676H313.429C145.768 664.181 11.8201 530.233 0 362.572V676Z"
+                />
+              </svg>
+              <svg
+                class="border-out-left"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M324.681 0.273987L324.587 0H352.261C352.23 0.091 352.198 0.182987 352.167 0.273987C347.609 0.0919868 343.027 0 338.424 0C333.821 0 329.24 0.0919868 324.681 0.273987ZM0 338.424L0 324.587L0.273955 324.681C0.0918966 329.24 0 333.821 0 338.424ZM0 338.424C0 342.03 0.0563786 345.622 0.168302 349.2L0 349.251L0 338.424ZM676 676V362.571C664.181 530.232 530.233 664.18 362.572 676H676Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li data-scroll="gallery" class="mynav__item active">
+            <a href="galpage.html" class="mynav__link">
+              <i class="bx bxs-photo-album"></i>
+              Gallery
+              <svg
+                class="border-out-right"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M675.726 324.681L676 324.587V352.261C675.909 352.23 675.817 352.198 675.726 352.167C675.908 347.609 676 343.027 676 338.424C676 333.821 675.908 329.24 675.726 324.681ZM337.576 0H351.413L351.319 0.273955C346.76 0.0918966 342.179 0 337.576 0ZM337.576 0C333.97 0 330.378 0.0563786 326.8 0.168302L326.749 0H337.576ZM0 676H313.429C145.768 664.181 11.8201 530.233 0 362.572V676Z"
+                />
+              </svg>
+              <svg
+                class="border-out-left"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M324.681 0.273987L324.587 0H352.261C352.23 0.091 352.198 0.182987 352.167 0.273987C347.609 0.0919868 343.027 0 338.424 0C333.821 0 329.24 0.0919868 324.681 0.273987ZM0 338.424L0 324.587L0.273955 324.681C0.0918966 329.24 0 333.821 0 338.424ZM0 338.424C0 342.03 0.0563786 345.622 0.168302 349.2L0 349.251L0 338.424ZM676 676V362.571C664.181 530.232 530.233 664.18 362.572 676H676Z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li data-scroll="about" class="mynav__item">
+            <a href="#about" class="mynav__link">
+              <i class="bx bxs-user-pin"></i>
+              About
+              <svg
+                class="border-out-right"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M675.726 324.681L676 324.587V352.261C675.909 352.23 675.817 352.198 675.726 352.167C675.908 347.609 676 343.027 676 338.424C676 333.821 675.908 329.24 675.726 324.681ZM337.576 0H351.413L351.319 0.273955C346.76 0.0918966 342.179 0 337.576 0ZM337.576 0C333.97 0 330.378 0.0563786 326.8 0.168302L326.749 0H337.576ZM0 676H313.429C145.768 664.181 11.8201 530.233 0 362.572V676Z"
+                />
+              </svg>
+              <svg
+                class="border-out-left"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M324.681 0.273987L324.587 0H352.261C352.23 0.091 352.198 0.182987 352.167 0.273987C347.609 0.0919868 343.027 0 338.424 0C333.821 0 329.24 0.0919868 324.681 0.273987ZM0 338.424L0 324.587L0.273955 324.681C0.0918966 329.24 0 333.821 0 338.424ZM0 338.424C0 342.03 0.0563786 345.622 0.168302 349.2L0 349.251L0 338.424ZM676 676V362.571C664.181 530.232 530.233 664.18 362.572 676H676Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li data-scroll="contact" class="mynav__item">
+            <a href="#contact" class="mynav__link">
+              <i class="bx bxs-envelope"></i>
+              Contact
+              <svg
+                class="border-out-right"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M675.726 324.681L676 324.587V352.261C675.909 352.23 675.817 352.198 675.726 352.167C675.908 347.609 676 343.027 676 338.424C676 333.821 675.908 329.24 675.726 324.681ZM337.576 0H351.413L351.319 0.273955C346.76 0.0918966 342.179 0 337.576 0ZM337.576 0C333.97 0 330.378 0.0563786 326.8 0.168302L326.749 0H337.576ZM0 676H313.429C145.768 664.181 11.8201 530.233 0 362.572V676Z"
+                />
+              </svg>
+              <svg
+                class="border-out-left"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M324.681 0.273987L324.587 0H352.261C352.23 0.091 352.198 0.182987 352.167 0.273987C347.609 0.0919868 343.027 0 338.424 0C333.821 0 329.24 0.0919868 324.681 0.273987ZM0 338.424L0 324.587L0.273955 324.681C0.0918966 329.24 0 333.821 0 338.424ZM0 338.424C0 342.03 0.0563786 345.622 0.168302 349.2L0 349.251L0 338.424ZM676 676V362.571C664.181 530.232 530.233 664.18 362.572 676H676Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="section-cat" id="sectionCat">
+      <div class="case">
+        <ul class="cat">
+          <li class="cat__item active" data-filter="all">
+            All
+          </li>
+          <li class="cat__item" data-filter="lifestyle">
+            Lifestyle
+          </li>
+          <li class="cat__item" data-filter="portrait">
+            Portrait
+          </li>
+          <li class="cat__item" data-filter="macro">
+            Macro
+          </li>
+          <li class="cat__item" data-filter="silu">
+            Silhouette
+          </li>
+          <li class="cat__item" data-filter="selected">
+            Selected
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section-museum" id="gallery">
+      <div class="filter-container case">
+        <div class="x">
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="lifestyle" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/ppl/ppl-7.jpg"
+                  alt="Lifestyle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="macro" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/macro/macro-2.jpg"
+                  alt="Macro"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="silu" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/silu/silu-1.jpg"
+                  alt="Victory"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="silu" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/silu/silu-2.jpg"
+                  alt="Silhouette"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="silu" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/silu/silu-4.jpg"
+                  alt="Silhouette"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="silu" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/silu/silu-7.jpg"
+                  alt="Silhouette"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/nat/nat-14.jpg"
+                  alt="Nature"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/nat/nat-2.jpg"
+                  alt="Nature"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/nat/nat-5.jpg"
+                  alt="Nature"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/ppl/ppl-10.jpg"
+                  alt="Lifestyle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/ppl/ppl-11.jpg"
+                  alt="Lifestyle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/ppl/ppl-12.jpg"
+                  alt="Lifestyle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/ppl/ppl-8.jpg"
+                  alt="Lifestyle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/ppl/ppl-9.jpg"
+                  alt="Lifestyle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/ppl/ppl-7.jpg"
+                  alt="Lifestyle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="y-xs-3 y-md-4">
+            <div class="filtr-item" data-category="animals" data-sort="value">
+              <a href="#singleView">
+                <img
+                  class="filter__img"
+                  src="resources/macro/macro-4.jpg"
+                  alt="Lifestyle"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== About =========== -->
+
+    <section class="title" id="about">
+      <h1 class="heading__primary">
+        Life of a Photo Enthusiast
+      </h1>
+    </section>
+
+    <div class="about">
+      <div class="case">
+        <div class="owl-carousel owl-theme owl-carousel-3">
+          <div class="pb-3">
+            <div class="about__slide">
+              <div class="about__quote about__quote--white">
+                <div class="about__quote-text about__quote-text--small">
+                  Having the honor of being a teacher for 25 years, I have found
+                  my new passion in Photography.
+
+                  <svg
+                    class="about__quote-mark"
+                    viewBox="0 0 372 400"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M337.125 200H279V150C279 122.422 299.852 100 325.5 100H331.312C340.976 100 348.75 91.6406 348.75 81.25V43.75C348.75 33.3594 340.976 25 331.312 25H325.5C261.272 25 209.25 80.9375 209.25 150V337.5C209.25 358.203 224.871 375 244.125 375H337.125C356.379 375 372 358.203 372 337.5V237.5C372 216.797 356.379 200 337.125 200ZM127.875 200H69.75V150C69.75 122.422 90.6023 100 116.25 100H122.062C131.726 100 139.5 91.6406 139.5 81.25V43.75C139.5 33.3594 131.726 25 122.062 25H116.25C52.0219 25 0 80.9375 0 150V337.5C0 358.203 15.6211 375 34.875 375H127.875C147.129 375 162.75 358.203 162.75 337.5V237.5C162.75 216.797 147.129 200 127.875 200Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="resources/self/self-1.jpg" alt="" class="about__img" />
+            </div>
+          </div>
+          <div class="pb-3">
+            <div class="about__slide">
+              <div class="about__quote">
+                <div class="about__quote-text">
+                  A photographer tells a story with a picture.
+                  <svg
+                    class="about__quote-mark"
+                    viewBox="0 0 372 400"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M337.125 200H279V150C279 122.422 299.852 100 325.5 100H331.312C340.976 100 348.75 91.6406 348.75 81.25V43.75C348.75 33.3594 340.976 25 331.312 25H325.5C261.272 25 209.25 80.9375 209.25 150V337.5C209.25 358.203 224.871 375 244.125 375H337.125C356.379 375 372 358.203 372 337.5V237.5C372 216.797 356.379 200 337.125 200ZM127.875 200H69.75V150C69.75 122.422 90.6023 100 116.25 100H122.062C131.726 100 139.5 91.6406 139.5 81.25V43.75C139.5 33.3594 131.726 25 122.062 25H116.25C52.0219 25 0 80.9375 0 150V337.5C0 358.203 15.6211 375 34.875 375H127.875C147.129 375 162.75 358.203 162.75 337.5V237.5C162.75 216.797 147.129 200 127.875 200Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <img
+                src="resources/self/self-2.jpg"
+                alt=""
+                class="about__img about__img--2"
+              />
+            </div>
+          </div>
+          <div class="pb-3">
+            <div class="about__slide">
+              <div class="about__quote about__quote--small">
+                <div class="about__quote-text">
+                  <p>I currently live with my family in Bangladesh.</p>
+                  <svg
+                    class="about__quote-mark"
+                    viewBox="0 0 372 400"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M337.125 200H279V150C279 122.422 299.852 100 325.5 100H331.312C340.976 100 348.75 91.6406 348.75 81.25V43.75C348.75 33.3594 340.976 25 331.312 25H325.5C261.272 25 209.25 80.9375 209.25 150V337.5C209.25 358.203 224.871 375 244.125 375H337.125C356.379 375 372 358.203 372 337.5V237.5C372 216.797 356.379 200 337.125 200ZM127.875 200H69.75V150C69.75 122.422 90.6023 100 116.25 100H122.062C131.726 100 139.5 91.6406 139.5 81.25V43.75C139.5 33.3594 131.726 25 122.062 25H116.25C52.0219 25 0 80.9375 0 150V337.5C0 358.203 15.6211 375 34.875 375H127.875C147.129 375 162.75 358.203 162.75 337.5V237.5C162.75 216.797 147.129 200 127.875 200Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <img
+                src="resources/self/self-4.jpg"
+                alt=""
+                class="about__img about__img--big"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========== Contact =========== -->
+    <section class="title" id="contact">
+      <h1 class="heading__primary">
+        Send an Email
+      </h1>
+    </section>
+
+    <div class="contact">
+      <div class="case">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="">
+              <div class="form-group">
+                <label for="Name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Sunject">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your concern"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea
+                  class="form-control"
+                  name="Message"
+                  id=""
+                  cols="30"
+                  rows="6"
+                  placeholder="Write a Message"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  class="btn btn-block"
+                  value="Send"
+                  name="send"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 y2">
+            <div class="contact__msg">
+              Unauthorized use of any picture is not only illegal but also very
+              uncool. All the Pictures on this site are available for sale.
+              Contact me for further discussion.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========== Footer =========== -->
+    <footer class="footer">
+      <div class="case">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="footer__copyright">
+              All rights reserved &copy; <span id="year"></span> <br />Ken
+              Roberts
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="footer__links">
+              <a href="www.facebook.com"
+                ><i class="bx bxl-facebook-square"></i
+              ></a>
+              <a href="www.instagram.com"><i class="bx bxl-instagram"></i></a>
+              <a href="mailto:ken@gmail.com"><i class="bx bx-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========== single view popup =========== -->
+    <div id="singleView" class="singleview">
+      <div class="case">
+        <div class="row">
+          <div class="col-12">
+            <div class="singleview__img-container">
+              <img
+                src="resources/ppl/ppl-1.jpg"
+                alt="Fresh Crops"
+                class="singleview__img"
+                id="sImg"
+              />
+              <a href="#mynav" class="singleview__close">
+                <i class="bx bx-x"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 y2">
+            <div class="singleview__title" id="sTitle">
+              Fresh Crops
+            </div>
+            <a href="purchase.html" class="singleview__btn">
+              Purchase
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/filter.min.js"></script>
+    <script src="js/filter-controls.js"></script>
+
+    <!-- owl-carousel -->
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <script src="assets/vendors/highlight.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="js/owl.js"></script>
+
+    <script src="js/scrollspy.js"></script>
+    <script src="js/galpage.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+.title {
+  margin-top: 7rem;
+}
+.case {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.purchase {
+  font-size: 1.8rem;
+
+  &__img-container {
+    width: 100%;
+  }
+  &__img {
+    @include imgCover();
+  }
+  & .case {
+    background-color: $color-white;
+    box-shadow: $shadow-section;
+    padding: 5rem 5rem 3rem 5rem;
+    max-width: 80%;
+    margin: auto;
+    @include respondMax(400px) {
+      max-width: 95%;
+    }
+  }
+  &__form {
+    @include flexCenter();
+    // flex-direction: column;
+  }
+
+  & .form-control {
+    font-size: inherit;
+    padding: 2.5rem 2rem;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba($color-black, 0.2);
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+    &::placeholder {
+      font-size: 1.8rem;
+    }
+  }
+  & textarea {
+    resize: none;
+  }
+  & .btn {
+    margin-top: 2rem;
+    font-size: inherit;
+    font-family: inherit;
+    color: $color-white;
+    box-shadow: 2px 2px 5px rgba($color-black, 0.2);
+    padding: 1rem 0;
+    border-radius: 1rem;
+    border: none;
+    background-color: $color-accent-green;
+    &:hover {
+      //   color: $color-white;
+      box-shadow: 1px 1px 1px rgba($color-black, 0.2);
+    }
+  }
+  &__exp {
+    color: inherit;
+    font-size: inherit;
+    padding: 1.2rem 0rem;
+    box-shadow: 2px 2px 5px rgba($color-black, 0.2);
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    @include flexCenter();
+  }
+}

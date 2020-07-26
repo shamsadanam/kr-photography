@@ -1,0 +1,61 @@
+.contact {
+  font-size: 1.8rem;
+  & .case {
+    // border: 1px solid red;
+    background-color: $color-white;
+    box-shadow: $shadow-section;
+    padding: 3rem 5rem;
+    @include respondMax(400px) {
+      max-width: 95%;
+    }
+  }
+  & .y2 {
+    @include flexCenter();
+    // padding: 0 2rem;
+    @include respondMax(767px) {
+      margin-top: 1rem;
+    }
+  }
+  &__msg {
+    font-size: 2rem;
+    max-width: 40ch;
+    text-align: center;
+    // border: 1px solid $color-accent-yellow;
+    // background-color: #f4f4f4;
+    padding: 2rem;
+    box-shadow: 2px 2px 5px rgba($color-black, 0.2);
+  }
+  & .form-control {
+    font-size: inherit;
+    padding: 2.5rem 2rem;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba($color-black, 0.2);
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+    &::placeholder {
+      font-size: 1.8rem;
+    }
+  }
+  & textarea {
+    resize: none;
+  }
+  & .btn {
+    margin-top: 2rem;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    box-shadow: 2px 2px 5px rgba($color-black, 0.2);
+    padding: 1rem 0;
+    border-radius: 1rem;
+    border: none;
+    background-color: #f4f4f4;
+    &:hover {
+      //   color: $color-white;
+      box-shadow: 1px 1px 1px rgba($color-black, 0.2);
+    }
+  }
+}

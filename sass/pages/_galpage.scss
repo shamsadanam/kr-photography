@@ -1,0 +1,54 @@
+.section-cat {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  color: rgba($color-primary, 0.6);
+  font-size: 1.2rem;
+
+  @include respondMin(575px) {
+    font-weight: 600;
+
+    font-size: 1.4rem;
+  }
+  @include respondMin(700px) {
+    font-size: 1.6rem;
+  }
+
+  & .case {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section-museum {
+  //   border: 1px solid red;
+  margin-bottom: 10rem;
+
+  & .case {
+    max-width: 80%;
+    margin: auto;
+  }
+  & .filter__img {
+    @include imgCover();
+    height: 10rem;
+
+    @include respondMin(700px) {
+      height: 15rem;
+    }
+    @include respondMin(992px) {
+      height: 20rem;
+    }
+
+    transition: all 0.4s ease-in-out;
+    backface-visibility: hidden;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+  & .filtr-item {
+    overflow: hidden;
+  }
+}

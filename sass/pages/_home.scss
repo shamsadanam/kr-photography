@@ -1,0 +1,33 @@
+// .section-cat {
+//   padding: 1rem 0;
+//   color: rgba($color-primary, 0.6);
+//   font-size: 1.2rem;
+
+//   & .case {
+//     max-width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
+
+.section-catcard {
+  // margin-bottom: 10rem;
+  // border: 1px solid red;
+  background-color: $color-white;
+  padding: 6rem 0;
+  max-width: 80%;
+
+  margin: 0 auto;
+  margin-bottom: 10rem;
+
+  box-shadow: $shadow-section;
+
+  @include respondMax(400px) {
+    max-width: 95%;
+  }
+
+  & .case {
+    max-width: 95%;
+  }
+}

@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASM Photography</title>
+    <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css" />
+
+    <!-- Owl Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <!-- bootstrap and custom -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/glider.min.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- =========== Top Navigtions =========== -->
+    <nav class="mynav" id="mynav">
+      <div class="mynav__container">
+        <ul class="mynav__navbar">
+          <li data-scroll="home" class="mynav__item active">
+            <a href="#home" class="mynav__link">
+              <i class="bx bxs-home"></i>
+              Home
+              <svg
+                class="border-out-right"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M675.726 324.681L676 324.587V352.261C675.909 352.23 675.817 352.198 675.726 352.167C675.908 347.609 676 343.027 676 338.424C676 333.821 675.908 329.24 675.726 324.681ZM337.576 0H351.413L351.319 0.273955C346.76 0.0918966 342.179 0 337.576 0ZM337.576 0C333.97 0 330.378 0.0563786 326.8 0.168302L326.749 0H337.576ZM0 676H313.429C145.768 664.181 11.8201 530.233 0 362.572V676Z"
+                />
+              </svg>
+              <svg
+                class="border-out-left"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M324.681 0.273987L324.587 0H352.261C352.23 0.091 352.198 0.182987 352.167 0.273987C347.609 0.0919868 343.027 0 338.424 0C333.821 0 329.24 0.0919868 324.681 0.273987ZM0 338.424L0 324.587L0.273955 324.681C0.0918966 329.24 0 333.821 0 338.424ZM0 338.424C0 342.03 0.0563786 345.622 0.168302 349.2L0 349.251L0 338.424ZM676 676V362.571C664.181 530.232 530.233 664.18 362.572 676H676Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li data-scroll="" class="mynav__item">
+            <a href="galpage.html" class="mynav__link">
+              <i class="bx bxs-photo-album"></i>
+              Gallery
+            </a>
+          </li>
+
+          <li data-scroll="about" class="mynav__item">
+            <a href="#about" class="mynav__link">
+              <i class="bx bxs-user-pin"></i>
+              About
+              <svg
+                class="border-out-right"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M675.726 324.681L676 324.587V352.261C675.909 352.23 675.817 352.198 675.726 352.167C675.908 347.609 676 343.027 676 338.424C676 333.821 675.908 329.24 675.726 324.681ZM337.576 0H351.413L351.319 0.273955C346.76 0.0918966 342.179 0 337.576 0ZM337.576 0C333.97 0 330.378 0.0563786 326.8 0.168302L326.749 0H337.576ZM0 676H313.429C145.768 664.181 11.8201 530.233 0 362.572V676Z"
+                />
+              </svg>
+              <svg
+                class="border-out-left"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M324.681 0.273987L324.587 0H352.261C352.23 0.091 352.198 0.182987 352.167 0.273987C347.609 0.0919868 343.027 0 338.424 0C333.821 0 329.24 0.0919868 324.681 0.273987ZM0 338.424L0 324.587L0.273955 324.681C0.0918966 329.24 0 333.821 0 338.424ZM0 338.424C0 342.03 0.0563786 345.622 0.168302 349.2L0 349.251L0 338.424ZM676 676V362.571C664.181 530.232 530.233 664.18 362.572 676H676Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li data-scroll="contact" class="mynav__item">
+            <a href="#contact" class="mynav__link">
+              <i class="bx bxs-envelope"></i>
+              Contact
+              <svg
+                class="border-out-right"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M675.726 324.681L676 324.587V352.261C675.909 352.23 675.817 352.198 675.726 352.167C675.908 347.609 676 343.027 676 338.424C676 333.821 675.908 329.24 675.726 324.681ZM337.576 0H351.413L351.319 0.273955C346.76 0.0918966 342.179 0 337.576 0ZM337.576 0C333.97 0 330.378 0.0563786 326.8 0.168302L326.749 0H337.576ZM0 676H313.429C145.768 664.181 11.8201 530.233 0 362.572V676Z"
+                />
+              </svg>
+              <svg
+                class="border-out-left"
+                viewBox="0 0 676 676"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M324.681 0.273987L324.587 0H352.261C352.23 0.091 352.198 0.182987 352.167 0.273987C347.609 0.0919868 343.027 0 338.424 0C333.821 0 329.24 0.0919868 324.681 0.273987ZM0 338.424L0 324.587L0.273955 324.681C0.0918966 329.24 0 333.821 0 338.424ZM0 338.424C0 342.03 0.0563786 345.622 0.168302 349.2L0 349.251L0 338.424ZM676 676V362.571C664.181 530.232 530.233 664.18 362.572 676H676Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- =========== hero =========== -->
+
+    <section class="header" id="home">
+      <div class="case">
+        <div class="x">
+          <div class="header__text y1">
+            <h1 class="heading__primary">
+              Walks & Captures
+            </h1>
+            <h2 class="heading__secondary">
+              Ken Roberts
+            </h2>
+            <h3 class="heading__tart">
+              A Photo Enthusiast
+            </h3>
+          </div>
+
+          <div class="header__img-container y2">
+            <img
+              src="resources/self/self-1.jpg"
+              alt="my-picture"
+              class="header__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== Showcase =========== -->
+    <section class="title">
+      <h1 class="heading__primary">
+        Selected Clicks
+      </h1>
+    </section>
+
+    <section class="showcase">
+      <div class="showcase__top showcase__case-top">
+        <img
+          src="resources/silu/silu-1.jpg"
+          alt=""
+          class="showcase__top-img"
+          id="showTop"
+        />
+      </div>
+      <div class="showcase__thumb showcase__case-bottom">
+        <div class="owl-carousel owl-theme owl-carousel-1">
+          <div class="showcase__thumb js-selected">
+            <img
+              src="resources/silu/silu-1.jpg"
+              alt=""
+              class="showcase__thumb-img"
+            />
+          </div>
+          <div class="showcase__thumb">
+            <img
+              src="resources/nat/nat-6.jpg"
+              alt=""
+              class="showcase__thumb-img"
+            />
+          </div>
+          <div class="showcase__thumb">
+            <img
+              src="resources/nat/nat-7.jpg"
+              alt=""
+              class="showcase__thumb-img"
+            />
+          </div>
+          <div class="showcase__thumb">
+            <img
+              src="resources/nat/nat-8.jpg"
+              alt=""
+              class="showcase__thumb-img"
+            />
+          </div>
+          <div class="showcase__thumb">
+            <img
+              src="resources/macro/macro-2.jpg"
+              alt=""
+              class="showcase__thumb-img"
+            />
+          </div>
+          <div class="showcase__thumb">
+            <img
+              src="resources/ppl/ppl-1.jpg"
+              alt=""
+              class="showcase__thumb-img"
+            />
+          </div>
+          <div class="showcase__thumb">
+            <img
+              src="resources/ppl/ppl-2.jpg"
+              alt=""
+              class="showcase__thumb-img"
+            />
+          </div>
+          <div class="showcase__thumb">
+            <img
+              src="resources/silu/silu-4.jpg"
+              alt=""
+              class="showcase__thumb-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== Catcards =========== -->
+    <section class="title">
+      <h1 class="heading__primary">
+        Selected Categories
+      </h1>
+    </section>
+
+    <div class="section-catcard">
+      <div class="case">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <a href="#macroPop">
+              <div class="catcard">
+                <div class="catcard__title">
+                  Macro
+                </div>
+                <div class="catcard__img catcard__img--1"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <a href="#siluPop">
+              <div class="catcard">
+                <div class="catcard__title catcard__title--bg">
+                  Silhouette
+                </div>
+                <div class="catcard__img catcard__img--2"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <a href="#lifestylePop">
+              <div class="catcard">
+                <div class="catcard__title catcard__title--bg">
+                  Lifestyle
+                </div>
+                <div class="catcard__img catcard__img--3"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <a href="#portPop">
+              <div class="catcard">
+                <div class="catcard__title">
+                  Nature
+                </div>
+                <div class="catcard__img catcard__img--4"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========== About =========== -->
+
+    <section class="title" id="about">
+      <h1 class="heading__primary">
+        Life of a Photo Enthusiast
+      </h1>
+    </section>
+
+    <div class="about">
+      <div class="case">
+        <div class="owl-carousel owl-theme owl-carousel-3">
+          <div class="pb-3">
+            <div class="about__slide">
+              <div class="about__quote about__quote--white">
+                <div class="about__quote-text about__quote-text--small">
+                  Having the honor of being a teacher for 25 years, I have found
+                  my new passion in Photography.
+
+                  <svg
+                    class="about__quote-mark"
+                    viewBox="0 0 372 400"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M337.125 200H279V150C279 122.422 299.852 100 325.5 100H331.312C340.976 100 348.75 91.6406 348.75 81.25V43.75C348.75 33.3594 340.976 25 331.312 25H325.5C261.272 25 209.25 80.9375 209.25 150V337.5C209.25 358.203 224.871 375 244.125 375H337.125C356.379 375 372 358.203 372 337.5V237.5C372 216.797 356.379 200 337.125 200ZM127.875 200H69.75V150C69.75 122.422 90.6023 100 116.25 100H122.062C131.726 100 139.5 91.6406 139.5 81.25V43.75C139.5 33.3594 131.726 25 122.062 25H116.25C52.0219 25 0 80.9375 0 150V337.5C0 358.203 15.6211 375 34.875 375H127.875C147.129 375 162.75 358.203 162.75 337.5V237.5C162.75 216.797 147.129 200 127.875 200Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="resources/self/self-2.jpg" alt="" class="about__img" />
+            </div>
+          </div>
+          <div class="pb-3">
+            <div class="about__slide">
+              <div class="about__quote">
+                <div class="about__quote-text">
+                  A photographer tells a story with a picture.
+                  <svg
+                    class="about__quote-mark"
+                    viewBox="0 0 372 400"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M337.125 200H279V150C279 122.422 299.852 100 325.5 100H331.312C340.976 100 348.75 91.6406 348.75 81.25V43.75C348.75 33.3594 340.976 25 331.312 25H325.5C261.272 25 209.25 80.9375 209.25 150V337.5C209.25 358.203 224.871 375 244.125 375H337.125C356.379 375 372 358.203 372 337.5V237.5C372 216.797 356.379 200 337.125 200ZM127.875 200H69.75V150C69.75 122.422 90.6023 100 116.25 100H122.062C131.726 100 139.5 91.6406 139.5 81.25V43.75C139.5 33.3594 131.726 25 122.062 25H116.25C52.0219 25 0 80.9375 0 150V337.5C0 358.203 15.6211 375 34.875 375H127.875C147.129 375 162.75 358.203 162.75 337.5V237.5C162.75 216.797 147.129 200 127.875 200Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <img
+                src="resources/self/self-3.jpg"
+                alt=""
+                class="about__img about__img--2"
+              />
+            </div>
+          </div>
+          <div class="pb-3">
+            <div class="about__slide">
+              <div class="about__quote about__quote--small">
+                <div class="about__quote-text">
+                  <p>I currently live with my family in Bangladesh.</p>
+                  <svg
+                    class="about__quote-mark"
+                    viewBox="0 0 372 400"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M337.125 200H279V150C279 122.422 299.852 100 325.5 100H331.312C340.976 100 348.75 91.6406 348.75 81.25V43.75C348.75 33.3594 340.976 25 331.312 25H325.5C261.272 25 209.25 80.9375 209.25 150V337.5C209.25 358.203 224.871 375 244.125 375H337.125C356.379 375 372 358.203 372 337.5V237.5C372 216.797 356.379 200 337.125 200ZM127.875 200H69.75V150C69.75 122.422 90.6023 100 116.25 100H122.062C131.726 100 139.5 91.6406 139.5 81.25V43.75C139.5 33.3594 131.726 25 122.062 25H116.25C52.0219 25 0 80.9375 0 150V337.5C0 358.203 15.6211 375 34.875 375H127.875C147.129 375 162.75 358.203 162.75 337.5V237.5C162.75 216.797 147.129 200 127.875 200Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <img
+                src="resources/self/self-4.jpg"
+                alt=""
+                class="about__img about__img--big"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========== Contact =========== -->
+    <section class="title" id="contact">
+      <h1 class="heading__primary">
+        Send an Email
+      </h1>
+    </section>
+
+    <div class="contact">
+      <div class="case">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="">
+              <div class="form-group">
+                <label for="Name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Sunject">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your concern"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea
+                  class="form-control"
+                  name="Message"
+                  id=""
+                  cols="30"
+                  rows="6"
+                  placeholder="Write a Message"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  class="btn btn-block"
+                  value="Send"
+                  name="send"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 y2">
+            <div class="contact__msg">
+              Unauthorized use of any picture is not only illegal but also very
+              uncool. All the Pictures on this site are available for sale.
+              Contact me for further discussion.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========== Footer =========== -->
+    <footer class="footer">
+      <div class="case">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="footer__copyright">
+              All rights reserved &copy; <span id="year"></span> <br />Ken
+              Roberts
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="footer__links">
+              <a href="www.facebook.com"
+                ><i class="bx bxl-facebook-square"></i
+              ></a>
+              <a href="www.instagram.com"><i class="bx bxl-instagram"></i></a>
+              <a href="mailto:ken@gmail.com"><i class="bx bx-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========== popups =========== -->
+    <div id="macroPop" class="popup">
+      <div class="popup__title">
+        Macro
+      </div>
+      <!--popup close button -->
+      <a href="#sectionCatcard" class="popup__close">
+        <i class="bx bx-x"></i>
+      </a>
+      <div class="popup__content">
+        <div
+          class="owl-carousel owl-theme owl-carousel-2"
+          style="z-index: 9999;"
+        >
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-8.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Spider on The Wall
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-2.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Tree Bugs Found a New Home
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-3.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Wall lizard having a snack
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-4.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Wall lizard having a snack
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-5.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Wall lizard having a snack
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-6.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Wall lizard having a snack
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-7.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Wall lizard having a snack
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-1.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Wall lizard having a snack
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img
+                src="resources/macro/macro-9.jpg"
+                alt=""
+                class="popup__img"
+              />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Wall lizard having a snack
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="lifestylePop" class="popup">
+      <div class="popup__title">
+        Lifestyle
+      </div>
+      <!--popup close button -->
+      <a href="#sectionCatcard" class="popup__close">
+        <i class="bx bx-x"></i>
+      </a>
+
+      <div class="popup__content">
+        <div
+          class="owl-carousel owl-theme owl-carousel-2"
+          style="z-index: 9999;"
+        >
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-10.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Construction Work
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-1.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Carfting of a fish net
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-2.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Life of a Boatman
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-3.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Kids catching fish in mud
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-5.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Catching fish with net
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-6.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                An afternoon by the side of a lake
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-7.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                A Winter Morning
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-8.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                A Winter Morning
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-9.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Refreshment after hardwork
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-4.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Refreshment after hardwork
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-11.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Refreshment after hardwork
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-12.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Refreshment after hardwork
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/ppl/ppl-1.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Refreshment after hardwork
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="siluPop" class="popup">
+      <div class="popup__title">
+        Silhouette
+      </div>
+      <!--popup close button -->
+      <a href="#sectionCatcard" class="popup__close">
+        <i class="bx bx-x"></i>
+      </a>
+      <div class="popup__content">
+        <div class="owl-carousel owl-theme owl-carousel-2">
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-4.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                A victorious evening
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-1.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Fisherman Homecoming
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-2.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Sunset on riverbank
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-3.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                A village boy showing off skills
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-6.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Returning Home
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-7.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Standing on the edge face up
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-5.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Standing on the edge face up
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-8.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Standing on the edge face up
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-10.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Standing on the edge face up
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/silu/silu-11.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Standing on the edge face up
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portPop" class="popup">
+      <div class="popup__title">
+        Nature
+      </div>
+      <!--popup close button -->
+      <a href="#sectionCatcard" class="popup__close">
+        <i class="bx bx-x"></i>
+      </a>
+      <div class="popup__content">
+        <div
+          class="owl-carousel owl-theme owl-carousel-2"
+          style="z-index: 9999;"
+        >
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-14.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-2.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-3.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-4.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-5.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-6.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-7.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-8.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-8.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-9.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-10.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-11.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-1.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-13.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="popup__slide">
+            <div class="popup__img-container popup__img-container--wide">
+              <img src="resources/nat/nat-12.jpg" alt="" class="popup__img" />
+            </div>
+            <div class="popup__text">
+              <div class="popup__name">
+                Nature
+              </div>
+              <div class="popup__cta text-center">
+                <a
+                  href="purchase.html"
+                  class="btn__purchase"
+                  aria-label="Purchase"
+                >
+                  Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- owl-carousel -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <script src="assets/vendors/highlight.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="js/owl.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollspy.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
