@@ -21,6 +21,10 @@
   margin: 0 auto;
   margin-bottom: 10rem;
 
+  @include respondMax(767px){
+    margin-bottom: 5rem;
+  }
+
   box-shadow: $shadow-section;
 
   @include respondMax(400px) {

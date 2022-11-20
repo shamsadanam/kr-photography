@@ -6,6 +6,10 @@
   margin: 0 auto;
   margin-bottom: 10rem;
 
+  @include respondMax(767px) {
+    margin-bottom: 5rem;
+  }
+
   @include respondMin(400px) {
     max-width: 85%;
   }

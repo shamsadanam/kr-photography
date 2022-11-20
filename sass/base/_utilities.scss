@@ -4,6 +4,14 @@
   }
 }
 
+.u-mt-10 {
+  margin-top: 10rem !important;
+
+  @include respondMax(991px) {
+    margin-top: 5rem !important;
+  }
+}
+
 // .u-shadow {
 //   // box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
 //   // position: relative;

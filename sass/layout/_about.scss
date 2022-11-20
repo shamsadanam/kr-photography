@@ -1,6 +1,10 @@
 .about {
   padding-bottom: 5rem;
 
+  @include respondMax(767px) {
+    padding-bottom: 0rem;
+  }
+
   &__slide {
     height: 40rem;
     display: flex;
